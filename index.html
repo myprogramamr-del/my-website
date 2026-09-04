@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarPharma — Al-Marwani Trading Establishment | Medicines & Medical Supplies, Yemen</title>
+<meta name="description" content="Al-Marwani Trading Establishment (MarPharma) — importing and distributing medicines, medical supplies, and electronic medical equipment across the Republic of Yemen since 2004.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2316376B'/%3E%3Cpath d='M11 7v5.5c0 3.6 10 3.6 10 0V7' fill='none' stroke='white' stroke-width='2.7' stroke-linecap='round'/%3E%3Cpath d='M16 15.2v4.6' fill='none' stroke='white' stroke-width='2.7' stroke-linecap='round'/%3E%3Crect x='9.5' y='21' width='13' height='5.6' rx='2.8' fill='white'/%3E%3Cpath d='M12.3 21H16v5.6h-3.7a2.8 2.8 0 0 1 0-5.6z' fill='%230284C7'/%3E%3Cpath d='M16 21v5.6' stroke='%2316376B' stroke-width='1.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===== الأساسيات ===== */
+:root{
+  --ink:#1B2A47; --ink-soft:#51617E;
+  --navy:#16376B; --primary:#1D5BBF; --primary-soft:#E7F0FC;
+  --accent:#0284C7; --accent-deep:#03699F; --accent-soft:#E1F2FC;
+  --bg:#F9FBFE; --lilac:#E4EEFA; --line:#DDE7F3;
+  --dark:#14274E; --dark-2:#1B3158; --footer:#0F1D3A;
+  --fd:'Fraunces',Georgia,serif; --fb:'Manrope',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+body{font-family:var(--fb);color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:3px solid rgba(2,132,199,.45);outline-offset:2px}
+img,svg{display:block}
+a{color:inherit}
+.container{width:min(1140px,92%);margin-inline:auto}
+section{padding:96px 0}
+.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+/* ===== عناوين الأقسام ===== */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--primary)}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+h2{font-family:var(--fd);font-weight:600;font-size:clamp(1.9rem,3.4vw,2.7rem);line-height:1.14;letter-spacing:-.01em;margin:14px 0 16px}
+.lead{color:var(--ink-soft);max-width:580px}
+
+/* ===== الأزرار ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:999px;font-weight:700;font-size:.95rem;border:2px solid transparent;cursor:pointer;transition:.25s;text-decoration:none;font-family:inherit;line-height:1.2}
+.btn .i{width:18px;height:18px}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:var(--accent-deep);transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(2,132,199,.5)}
+.btn-solid{background:var(--navy);color:#fff}
+.btn-solid:hover{background:#112B5A;transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(22,55,107,.5)}
+
+/* ===== الشريط العلوي ===== */
+.topbar{background:var(--dark);color:#D6E3F7;font-size:.8rem;padding:9px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:16px;align-items:center}
+.topbar span,.topbar a{display:inline-flex;align-items:center;gap:7px}
+.topbar .i{width:15px;height:15px;color:#A9CDF2}
+.topbar a{color:#fff;text-decoration:none}
+.topbar a:hover{color:#A9CDF2}
+
+/* ===== شريط التنقل ===== */
+.nav{position:sticky;top:0;z-index:100;background:rgba(249,251,254,.88);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:.3s}
+.nav.scrolled{border-bottom-color:var(--line);box-shadow:0 10px 28px -20px rgba(23,39,71,.35)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px;position:relative}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.brand-name{font-family:var(--fd);font-weight:700;font-size:1.3rem;letter-spacing:-.01em}
+.brand-name em{font-style:normal;color:var(--primary)}
+.nav-links{display:flex;gap:4px;list-style:none}
+.nav-links a{padding:9px 14px;border-radius:999px;font-weight:600;font-size:.9rem;color:var(--ink-soft);text-decoration:none;transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--navy);background:var(--primary-soft)}
+.nav-cta{padding:11px 22px;font-size:.88rem}
+.burger{display:none;background:none;border:0;cursor:pointer;width:44px;height:44px;position:relative}
+.burger span{position:absolute;left:11px;width:22px;height:2.4px;background:var(--ink);border-radius:2px;transition:.3s}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.menu-open .burger span:nth-child(1){top:21px;transform:rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){top:21px;transform:rotate(-45deg)}
+
+/* ===== قسم البطل ===== */
+.hero{position:relative;padding:68px 0 84px;overflow:hidden;
+  background:radial-gradient(900px 520px at 88% 8%,#DCEEF9 0%,transparent 60%),
+             radial-gradient(820px 540px at 8% 92%,#E5EEFA 0%,transparent 55%),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;position:relative;z-index:1}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:.76rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);box-shadow:0 8px 22px -16px rgba(23,39,71,.3)}
+.hero-eyebrow .i{width:16px;height:16px;color:var(--accent)}
+.hero h1{font-family:var(--fd);font-weight:600;font-size:clamp(2.45rem,4.6vw,3.85rem);line-height:1.07;letter-spacing:-.02em;margin:20px 0 18px}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--accent)}
+.hero-sub{color:var(--ink-soft);font-size:1.05rem;max-width:520px}
+.quick-ask{margin-top:32px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:9px;display:flex;gap:9px;box-shadow:0 20px 44px -26px rgba(23,39,71,.35);max-width:560px}
+.quick-ask input{flex:1;min-width:0;border:0;outline:0;font:inherit;font-size:.93rem;padding:11px 14px;background:transparent;color:var(--ink)}
+.quick-ask input::placeholder{color:#9FACC9}
+.quick-ask .btn{padding:11px 20px;font-size:.9rem;white-space:nowrap}
+.talk{display:flex;align-items:center;gap:16px;margin-top:26px;flex-wrap:wrap}
+.avatars{display:flex;padding-left:10px}
+.av{width:42px;height:42px;border-radius:50%;border:3px solid var(--bg);display:grid;place-items:center;font-weight:800;font-size:.62rem;color:#fff;margin-left:-11px;letter-spacing:.02em}
+.av1{background:#1D5BBF}.av2{background:#0284C7}.av3{background:#4E8FE0}.av4{background:var(--dark)}
+.talk-txt b{display:block;font-size:.95rem}
+.talk-txt small{color:var(--ink-soft);font-size:.82rem}
+.talk-txt a{font-family:var(--fd);font-weight:600;font-size:1.12rem;color:var(--navy);text-decoration:none}
+.talk-txt a:hover{color:var(--accent)}
+
+/* الرسم التوضيحي والعناصر العائمة */
+.hero-art{position:relative;max-width:540px;margin-inline:auto;width:100%}
+.hero-art>svg{width:100%;height:auto}
+.chip{position:absolute;background:#fff;border:1px solid var(--line);border-radius:16px;padding:11px 16px;box-shadow:0 18px 36px -20px rgba(23,39,71,.35);display:flex;align-items:center;gap:11px;animation:floaty 5.2s ease-in-out infinite;z-index:2}
+.chip .cic{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:var(--primary-soft);color:var(--primary);flex-shrink:0}
+.chip .cic .i{width:19px;height:19px}
+.chip b{font-size:.83rem;display:block;line-height:1.25}
+.chip small{display:block;font-weight:600;color:var(--ink-soft);font-size:.72rem;line-height:1.3}
+.chip-a{top:5%;right:1%}
+.chip-b{top:44%;right:-2%;animation-delay:-1.8s}
+.chip-c{bottom:3%;left:5%;animation-delay:-3.2s}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+.ecg-wrap{position:absolute;left:0;right:0;bottom:0;pointer-events:none;opacity:.5;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.ecg{width:100%;height:64px}
+.ecg path{fill:none;stroke:var(--accent);stroke-width:2;stroke-dasharray:120 1480;animation:ecgMove 7s linear infinite}
+@keyframes ecgMove{to{stroke-dashoffset:-1600}}
+
+/* ===== شريط الشركاء المتحرك ===== */
+.marquee{border-block:1px solid var(--line);background:#fff;padding:17px 0;overflow:hidden}
+.mq-track{display:flex;width:max-content;animation:mq 34s linear infinite}
+.marquee:hover .mq-track{animation-play-state:paused}
+.mq-item{display:inline-flex;align-items:center;gap:22px;margin-right:64px;font-size:.76rem;font-weight:800;letter-spacing:.14em;color:var(--ink-soft);white-space:nowrap}
+.mq-item .i{width:12px;height:12px;color:#C3D6F0;stroke-width:3}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ===== من نحن ===== */
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+.about-art{position:relative;background:#EDF3FB;border-radius:26px;box-shadow:inset 0 0 0 1px #DCE8F6}
+.about-art>svg{width:100%;height:auto;border-radius:26px}
+.about-chip{position:absolute;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 15px;box-shadow:0 18px 36px -20px rgba(23,39,71,.35);display:flex;align-items:center;gap:10px;font-size:.8rem;font-weight:800}
+.about-chip .i{width:17px;height:17px;color:var(--accent)}
+.about-chip small{display:block;font-weight:600;color:var(--ink-soft);font-size:.68rem}
+.ac-1{top:20px;right:18px}
+.ac-2{bottom:20px;left:18px}
+.about-txt p{color:var(--ink-soft);margin-bottom:16px}
+.about-checks{list-style:none;margin-top:24px;display:grid;gap:12px}
+.about-checks li{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:.95rem}
+.about-checks .ck{width:24px;height:24px;border-radius:50%;background:var(--primary-soft);color:var(--navy);display:grid;place-items:center;flex-shrink:0;margin-top:2px}
+.about-checks .ck .i{width:13px;height:13px;stroke-width:2.6}
+.timeline{margin-top:78px;display:grid;grid-template-columns:repeat(3,1fr);gap:42px;border-top:1.5px dashed #C3D6F0}
+.tl{position:relative;padding-top:26px}
+.tl::before{content:"";position:absolute;top:-8px;left:0;width:15px;height:15px;border-radius:50%;background:#fff;border:4px solid var(--primary)}
+.tl:nth-child(2)::before{border-color:var(--accent)}
+.tl-year{font-family:var(--fd);font-style:italic;font-weight:600;font-size:1.55rem;color:var(--accent)}
+.tl b{display:block;font-family:var(--fd);font-weight:600;font-size:1.12rem;margin:4px 0 6px}
+.tl p{color:var(--ink-soft);font-size:.9rem}
+
+/* ===== الأقسام (Bento) ===== */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:22px;margin-top:56px}
+.bcard{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px;display:flex;gap:26px;align-items:center;transition:transform .35s,box-shadow .35s,border-color .35s}
+.bcard:hover{transform:translateY(-5px);box-shadow:0 26px 52px -30px rgba(23,39,71,.4);border-color:#C3D6F0}
+.b1,.b4{grid-column:span 7}.b2,.b3{grid-column:span 5}
+.bcard .txt{flex:1;min-width:0}
+.b-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.b-ic{width:48px;height:48px;border-radius:14px;background:var(--primary-soft);color:var(--navy);display:grid;place-items:center}
+.b2 .b-ic{background:var(--accent-soft);color:var(--accent-deep)}
+.b-num{font-family:var(--fd);font-style:italic;font-weight:500;font-size:2.1rem;color:#C3D6F0}
+.bcard h3{font-family:var(--fd);font-weight:600;font-size:1.32rem;margin-bottom:8px;letter-spacing:-.01em}
+.bcard p{color:var(--ink-soft);font-size:.93rem}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.tags span{background:var(--primary-soft);color:var(--navy);font-size:.7rem;font-weight:800;padding:5px 12px;border-radius:999px;letter-spacing:.04em}
+.b2 .tags span{background:var(--accent-soft);color:var(--accent-deep)}
+.bcard .art{width:186px;flex-shrink:0}
+.bcard .art svg{width:100%;height:auto}
+.blink{animation:blink 1.4s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.15}}
+
+/* ===== القيم + الرؤية والرسالة ===== */
+.values{background:#F2F6FC}
+.values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 60px;margin-top:50px}
+.value{display:flex;gap:22px;padding:25px 0;border-bottom:1px solid #DAE6F4}
+.value .no{font-family:var(--fd);font-style:italic;font-weight:500;font-size:1.9rem;color:#8FB4E6;line-height:1;min-width:52px;transition:.25s}
+.value:hover .no{color:var(--accent)}
+.value h3{font-family:var(--fd);font-weight:600;font-size:1.22rem;margin-bottom:4px}
+.value p{color:var(--ink-soft);font-size:.92rem}
+.value:nth-child(7){grid-column:1/-1;border-bottom:0}
+.vm-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:66px}
+.vm{border-radius:26px;padding:42px 40px}
+.vm-vision{background:var(--dark-2);color:#EDF3FC}
+.vm-mission{background:var(--accent-soft);border:1px solid #C6E1F6}
+.vm .vlabel{display:inline-flex;align-items:center;gap:9px;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.vm-vision .vlabel{color:#B7CDEF}.vm-mission .vlabel{color:var(--accent-deep)}
+.vm .vlabel .i{width:19px;height:19px}
+.vm h3{font-family:var(--fd);font-weight:600;font-size:1.6rem;margin:12px 0 14px}
+.vm p{font-size:.98rem}
+.vm-vision p{color:#D6E3F7}.vm-mission p{color:#0C5A88}
+
+/* ===== شريط الإحصاءات (التسويق والطموح) ===== */
+.stats{background:var(--dark);color:#fff}
+.stats .eyebrow{color:#B7CDEF}
+.stats .eyebrow::before{background:var(--accent)}
+.stats h2{color:#fff}
+.stats .lead{color:#C0CFEA}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px}
+.stat{padding:0 36px;border-left:1px solid rgba(255,255,255,.15)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat .cnt{font-family:var(--fd);font-weight:600;font-size:clamp(2.3rem,4vw,3.3rem);display:block;line-height:1.05}
+.stat small{display:block;margin-top:8px;color:#C0CFEA;letter-spacing:.1em;text-transform:uppercase;font-size:.7rem;font-weight:800}
+.stats-next{margin-top:56px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;color:#D6E3F7;font-size:.92rem}
+.stats-next .badge{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.1);border-radius:999px;padding:9px 18px;font-weight:700;color:#fff}
+.stats-next .badge .i{width:17px;height:17px;color:#A9CDF2}
+.stats-next .arrow{color:#A9CDF2}
+
+/* ===== الشركاء ===== */
+.partners-list{margin-top:52px;display:flex;flex-direction:column;gap:16px}
+.partner{display:grid;grid-template-columns:64px 1fr auto;gap:22px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 28px;transition:.25s}
+.partner:hover{border-color:#C3D6F0;transform:translateX(6px);box-shadow:0 18px 40px -26px rgba(23,39,71,.35)}
+.partner.sole{background:var(--dark-2);border-color:transparent}
+.partner.sole:hover{transform:translateX(6px);box-shadow:0 22px 44px -26px rgba(20,39,78,.7)}
+.p-mono{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-family:var(--fd);font-weight:700;font-size:1.25rem;background:var(--primary-soft);color:var(--navy)}
+.partner.sole .p-mono{background:var(--accent);color:#fff}
+.p-name{font-weight:800;font-size:1.07rem;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.natural{font-weight:800;font-size:1.07rem;display:flex;align-items:center;gap:12px;flex-wrap:wrap; color:#E7F0FC}
+.p-tag{font-size:.62rem;font-weight:800;letter-spacing:.1em;padding:4px 11px;border-radius:999px;background:var(--primary-soft);color:var(--navy);text-transform:uppercase}
+.partner.sole .p-tag{background:rgba(255,255,255,.14);color:#C9E4F9}
+.p-sub{color:var(--ink-soft);font-size:.88rem;margin-top:3px}
+.partner.sole .p-sub{color:#B7CDEF}
+.p-contact{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.p-chip{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:.85rem;color:var(--navy);background:var(--primary-soft);padding:8px 15px;border-radius:999px;transition:.2s}
+.p-chip:hover{background:var(--navy);color:#fff}
+.p-chip .i{width:15px;height:15px}
+.partner.sole .p-chip{background:rgba(255,255,255,.12);color:#fff}
+.partner.sole .p-chip:hover{background:var(--accent)}
+
+/* ===== الفروع والخريطة ===== */
+.branch-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;margin-top:52px}
+.yemen-map{background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px}
+.map-svg{width:100%;height:auto}
+.map-svg .country{fill:#EBF2FB;stroke:#C3D6F0;stroke-width:2;stroke-linejoin:round}
+.map-svg .map-label{font-family:var(--fb);font-weight:800;font-size:9.5px;fill:#9DAECC;letter-spacing:.35em}
+.pin{cursor:pointer}
+.pin .dot{fill:var(--accent);stroke:#fff;stroke-width:2.5;transition:.25s;transform-box:fill-box;transform-origin:center}
+.pin .ring{fill:none;stroke:var(--accent);stroke-width:2;opacity:.6;transform-box:fill-box;transform-origin:center;animation:pinPulse 2.4s ease-out infinite}
+.pin text{font-family:var(--fb);font-weight:800;font-size:9.5px;fill:#66779E;letter-spacing:.08em;pointer-events:none}
+.pin:hover .dot,.pin.active .dot{fill:var(--navy);transform:scale(1.25)}
+.pin.active .ring{stroke:var(--navy)}
+@keyframes pinPulse{0%{transform:scale(.55);opacity:.8}100%{transform:scale(2.3);opacity:0}}
+.route{fill:none;stroke:#9CC9EA;stroke-width:2;stroke-dasharray:3 8;stroke-linecap:round;animation:routeFlow 1.8s linear infinite}
+@keyframes routeFlow{to{stroke-dashoffset:-11}}
+.map-legend{display:flex;gap:26px;margin-top:14px;padding-top:16px;border-top:1px dashed var(--line);font-size:.78rem;font-weight:700;color:var(--ink-soft)}
+.map-legend span{display:inline-flex;align-items:center;gap:9px}
+.lg-dot{width:11px;height:11px;border-radius:50%;background:var(--accent);border:2.5px solid #fff;box-shadow:0 0 0 1.5px var(--accent)}
+.lg-line{width:22px;height:0;border-top:2px dashed #9CC9EA}
+.branch-tabs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.btab{font-family:inherit;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:15px 18px;cursor:pointer;transition:.22s}
+.btab b{font-family:var(--fd);font-weight:600;font-size:1.05rem;display:block;color:var(--ink)}
+.btab small{font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.btab:hover{border-color:#C3D6F0}
+.btab.active{background:var(--navy);border-color:var(--navy)}
+.btab.active b{color:#fff}.btab.active small{color:#B7CDEF}
+.branch-detail{margin-top:16px;background:var(--primary-soft);border-radius:20px;padding:26px 28px;transition:opacity .18s,transform .18s}
+.branch-detail.fade{opacity:0;transform:translateY(7px)}
+.bd-top{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.bd-top h3{font-family:var(--fd);font-weight:600;font-size:1.5rem}
+.bd-tag{font-size:.64rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--accent-soft);color:var(--accent-deep);padding:5px 12px;border-radius:999px}
+.branch-detail>p{color:var(--ink-soft);font-size:.92rem;margin:12px 0 16px}
+.bd-row{display:flex;align-items:center;gap:12px;font-size:.9rem;font-weight:600;padding:7px 0}
+.bd-ic{width:32px;height:32px;border-radius:10px;background:#fff;color:var(--navy);display:grid;place-items:center;flex-shrink:0}
+.bd-ic .i{width:16px;height:16px}
+
+/* ===== الفريق ===== */
+.team-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
+.team-badge{width:132px;height:132px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;position:relative;flex-shrink:0;box-shadow:0 20px 40px -24px rgba(23,39,71,.35)}
+.team-badge::before{content:"";position:absolute;inset:-9px;border:2px dashed #C3D6F0;border-radius:50%;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.team-badge b{font-family:var(--fd);font-weight:600;font-size:2.5rem;color:var(--navy);line-height:1}
+.team-badge small{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.team-badge div{text-align:center}
+.leads{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:48px}
+.lead{display:flex;gap:20px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 26px;transition:.25s}
+.lead:hover{border-color:#C3D6F0;transform:translateY(-4px);box-shadow:0 22px 44px -28px rgba(23,39,71,.4)}
+.lead:nth-child(odd) .lg-mono{background:var(--primary)}
+.lead:nth-child(even) .lg-mono{background:var(--accent)}
+.lg-mono{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-family:var(--fd);font-weight:700;color:#fff;font-size:1.1rem;flex-shrink:0}
+.lead b{font-family:var(--fd);font-weight:600;font-size:1.16rem;display:block}
+.lead small{text-transform:uppercase;letter-spacing:.09em;color:var(--primary);font-size:.68rem;font-weight:800;display:block;margin:2px 0 4px}
+.lead p{color:var(--ink-soft);font-size:.82rem}
+
+/* ===== التواصل (بطاقة معلومات بعرض كامل) ===== */
+.c-info{background:var(--dark-2);border-radius:26px;padding:46px 48px;color:#EDF3FC;margin-top:52px;box-shadow:0 30px 60px -34px rgba(20,39,78,.55)}
+.c-head{display:flex;gap:20px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.12)}
+.c-info h3{font-family:var(--fd);font-weight:600;font-size:1.5rem;margin-bottom:8px}
+.c-head p{color:#B7CDEF;font-size:.92rem;max-width:420px}
+.c-actions{display:flex;gap:12px;flex-wrap:wrap}
+.c-actions .btn{padding:11px 22px;font-size:.88rem}
+.c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 40px;margin-top:10px}
+.c-row{display:flex;gap:14px;padding:16px 0;align-items:flex-start}
+.c-row .ic{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.1);display:grid;place-items:center;color:#A9CDF2;flex-shrink:0}
+.c-row b{display:block;font-size:.66rem;text-transform:uppercase;letter-spacing:.14em;color:#B7CDEF;margin-bottom:3px;font-weight:800}
+.c-row span,.c-row a{color:#fff;font-size:.93rem;text-decoration:none;display:block;line-height:1.5}
+.c-row a:hover{color:#A9CDF2}
+
+/* ===== التذييل ===== */
+footer{background:var(--footer);color:#B7CDEF;padding:66px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.25fr;gap:52px;padding-bottom:52px}
+footer .brand-name{color:#fff}
+footer .f-about{font-size:.9rem;margin:18px 0 14px;max-width:340px}
+footer .f-reg{font-size:.76rem;color:#9BAFD0}
+footer h4{color:#fff;font-family:var(--fd);font-weight:600;font-size:1.05rem;margin-bottom:16px}
+.foot-links{list-style:none;display:grid;gap:10px}
+.foot-links a{color:#B7CDEF;text-decoration:none;font-size:.9rem;transition:.2s}
+.foot-links a:hover{color:#fff;padding-left:5px}
+.foot-c{display:grid;gap:12px}
+.foot-c span,.foot-c a{display:flex;gap:10px;align-items:center;font-size:.88rem;color:#B7CDEF;text-decoration:none}
+.foot-c a:hover{color:#fff}
+.foot-c .i{width:16px;height:16px;color:#A9CDF2}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding:22px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem;color:#9BAFD0}
+
+/* ===== التوست ===== */
+.toast-stack{position:fixed;bottom:24px;right:24px;z-index:300;display:flex;flex-direction:column;gap:12px}
+.toast{display:flex;gap:12px;align-items:flex-start;background:#16233D;color:#fff;padding:15px 20px;border-radius:14px;box-shadow:0 22px 44px -18px rgba(0,0,0,.45);max-width:360px;animation:toastIn .38s cubic-bezier(.2,.9,.3,1.15)}
+.toast.out{animation:toastOut .3s forwards}
+.toast .t-ic{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;background:rgba(127,216,168,.18);color:#7FD8A8}
+.toast.warn .t-ic{background:rgba(255,208,138,.18);color:#FFD08A}
+.toast .t-ic .i{width:16px;height:16px;stroke-width:2.4}
+.toast b{display:block;font-size:.9rem}
+.toast p{font-size:.8rem;color:#BCCCEA}
+@keyframes toastIn{from{opacity:0;transform:translateY(16px) scale(.96)}}
+@keyframes toastOut{to{opacity:0;transform:translateX(20px)}}
+
+/* ===== الظهور عند التمرير ===== */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
+.reveal.visible{opacity:1;transform:none}
+
+/* ===== الاستجابة ===== */
+@media(max-width:1020px){
+  .hero-grid{grid-template-columns:1fr;gap:26px}
+  .hero-art{max-width:460px}
+  .chip-b{right:2%}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .bento{gap:18px}
+  .b1,.b2,.b3,.b4{grid-column:span 12}
+  .bcard .art{width:150px}
+  .branch-grid{grid-template-columns:1fr}
+  .team-head{align-items:flex-start}
+}
+@media(max-width:900px){
+  .burger{display:block}
+  .nav-links{display:none;position:absolute;top:74px;left:0;right:0;background:#fff;flex-direction:column;padding:16px 4%;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -28px rgba(23,39,71,.4);gap:2px}
+  .menu-open .nav-links{display:flex}
+  .nav-links a{padding:12px 16px}
+  .topbar .tb-left{display:none}
+  .topbar .container{justify-content:center}
+  .c-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  section{padding:70px 0}
+  .quick-ask{flex-direction:column}
+  .quick-ask .btn{width:100%}
+  .timeline{grid-template-columns:1fr;border-top:0;gap:26px}
+  .tl{border-left:2px dashed #C3D6F0;padding:0 0 6px 26px}
+  .tl::before{left:-9px;top:4px}
+  .values-grid{grid-template-columns:1fr}
+  .value:nth-child(7){grid-column:auto}
+  .vm-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:30px 0}
+  .stat{padding:0 0 0 26px}
+  .stat:nth-child(odd){border-left:0;padding-left:0}
+  .partner{grid-template-columns:56px 1fr;row-gap:14px}
+  .p-mono{width:56px;height:56px}
+  .p-contact{grid-column:1/-1;align-items:flex-start;flex-direction:row;flex-wrap:wrap}
+  .leads{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:38px}
+  .bcard{flex-direction:column;align-items:flex-start}
+  .bcard .art{width:100%;max-width:230px}
+  .c-info{padding:32px 26px}
+  .c-head{padding-bottom:22px}
+  .c-grid{grid-template-columns:1fr}
+  .team-badge{width:110px;height:110px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- مكتبة الأيقونات (SVG Sprite) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5.8 3.5h2.8l1.6 4.1-2 1.6a12.6 12.6 0 0 0 6.6 6.6l1.6-2 4.1 1.6v2.8a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 3.8 5.7a2 2 0 0 1 2-2.2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.2"/><path d="m4 7.5 8 5.8 8-5.8"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5S5.5 15.9 5.5 11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 10.5-6.5 10.5Z"/><circle cx="12" cy="11" r="2.4"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.8 2.6 2.8 14.4 0 17-2.8-2.6-2.8-14.4 0-17Z"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="m12 3 8 4.3v9.4L12 21l-8-4.3V7.3L12 3Z"/><path d="M4 7.3l8 4.2 8-4.2M12 11.5V21"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6.5h11v9h-11zM13.5 10h3.4l3.1 3.2v2.3h-3"/><circle cx="6.6" cy="17.6" r="2"/><circle cx="16.6" cy="17.6" r="2"/><path d="M8.6 17.5h6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 5.8v5.3c0 4.6-3 7.7-7 9.9-4-2.2-7-5.3-7-9.9V5.8L12 3Z"/><path d="m9 11.6 2.2 2.2 4-4.5"/></symbol>
+  <symbol id="i-steth" viewBox="0 0 24 24"><path d="M5 3.5v4.5a4.5 4.5 0 0 0 9 0V3.5"/><path d="M3.5 3.5H6.5M12.5 3.5h3"/><path d="M9.5 12.5v2a5 5 0 0 0 10 0v-1.3"/><circle cx="19.5" cy="10.8" r="2.3"/></symbol>
+  <symbol id="i-capsule" viewBox="0 0 24 24"><g transform="rotate(-45 12 12)"><rect x="4" y="8" width="16" height="8" rx="4"/><path d="M12 8v8"/></g></symbol>
+  <symbol id="i-syringe" viewBox="0 0 24 24"><g transform="rotate(-45 12 12)"><rect x="9" y="5" width="6" height="10" rx="1.5"/><path d="M9 8.5h6M9 11.5h6"/><path d="M10.8 5V2.8h2.4V5"/><path d="M12 15v6"/><path d="M15 7.5 18.8 3.7M15 10.5l2-2"/></g></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2.5"/><path d="M6.5 10.5h3l1.5-3.5 2.5 6.5 1.5-3h3"/><path d="M12 17v3.5M8 20.5h8"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="8.8" cy="7.8" r="3.6"/><path d="M2.8 20c.7-3.5 3-5.6 6-5.6s5.3 2.1 6 5.6"/><path d="M15.8 4.5a3.6 3.6 0 0 1 0 6.7M17.2 14.8c1.8.9 3 2.7 3.5 5.2"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15.5M13.5 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 5 5 10-11"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3.5 10.5 14M21 3.5l-6.8 17.5-3.7-7.3L3.5 10 21 3.5Z"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M6.5 8.5v-5h11v5"/><rect x="3.5" y="8.5" width="17" height="7.5" rx="2"/><path d="M6.5 14h11v6.5h-11z"/><circle cx="17.4" cy="12" r=".9" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 2.8 19.5h18.4L12 3.5Z"/><path d="M12 9.5v4.5M12 16.8v.4"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.2"/><path d="m8.7 13.4-1.6 7.4 4.9-2.6 4.9 2.6-1.6-7.4"/></symbol>
+  <symbol id="i-bottle" viewBox="0 0 24 24"><rect x="8" y="7" width="8" height="13" rx="2"/><rect x="6.5" y="3.5" width="11" height="4" rx="1.5"/><path d="M12 10.5v6M9 13.5h6"/></symbol>
+</svg>
+
+<!-- الشريط العلوي -->
+<div class="topbar">
+  <div class="container">
+    <span class="tb-left"><svg class="i"><use href="#i-pin"/></svg>Algiada Str 112, Sana'a — Yemen &nbsp;·&nbsp; Est. 2004</span>
+    <span>
+      <a href="tel:+9671221880"><svg class="i"><use href="#i-phone"/></svg>+967 1 221 880</a>
+      &nbsp;&nbsp;
+      <a href="mailto:marpharmaa@gmail.com"><svg class="i"><use href="#i-mail"/></svg>marpharmaa@gmail.com</a>
+    </span>
+  </div>
+</div>
+
+<!-- شريط التنقل -->
+<header class="nav" id="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="#home" aria-label="MarPharma home">
+      <!-- الشعار: سماعة طبيب + كبسولة -->
+      <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="2" y="2" width="36" height="36" rx="11" fill="#16376B"/>
+        <!-- أنبوبا السماعة (U) -->
+        <path d="M14 8.5v7c0 4.6 12 4.6 12 0V8.5" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+        <!-- الأنبوب الواصل -->
+        <path d="M20 19v5.5" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+        <!-- الكبسولة (رأس السماعة) -->
+        <rect x="12" y="26" width="16" height="7" rx="3.5" fill="#fff"/>
+        <path d="M15.5 26H20v7h-4.5a3.5 3.5 0 0 1 0-7z" fill="#0284C7"/>
+        <path d="M20 26v7" stroke="#16376B" stroke-width="1.7"/>
+      </svg>
+      <span class="brand-name">Mar<em>Pharma</em></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#divisions">Divisions</a></li>
+        <li><a href="#values">Values</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#branches">Branches</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-solid nav-cta" href="#contact">Contact Us</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ===== قسم البطل ===== -->
+<section class="hero" id="home" data-spy>
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="hero-eyebrow"><svg class="i"><use href="#i-shield"/></svg>Trusted in Yemen since 2004</div>
+      <h1><em>Mar</em>INTERNATIONL PHARMA , <em>delivered with care.</em></h1>
+      <p class="hero-sub">For over two decades, <strong>Al-Marwani Trading Establishment</strong> has imported and distributed high-quality medicines, medical supplies, and electronic equipment — serving pharmacies, clinics, and hospitals across the Republic of Yemen.</p>
+
+      <!-- شريط الطلب السريع -->
+      
+
+      <!-- التحدث مع الفريق -->
+      <div class="talk">
+        <div class="avatars" aria-hidden="true">
+          <span class="av av1">MA</span><span class="av av2">AH</span><span class="av av3">AA</span><span class="av av4">+22</span>
+        </div>
+        <div class="talk-txt">
+          <b>Talk to our team</b>
+          <small>22 specialists ready to help</small>
+          <a href="tel:+967771233313">+967 771 233 313</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- الرسم التوضيحي: صيدلانية بمعطف أبيض وقفازات سماوية + أدوية ومعدات -->
+    <div class="hero-art reveal" style="transition-delay:.12s">
+      <svg viewBox="0 0 520 560" role="img" aria-label="Illustration of a pharmacist in a white coat holding medicine">
+        <defs>
+          <clipPath id="blobClip"><ellipse cx="250" cy="290" rx="205" ry="198" transform="rotate(6 250 290)"/></clipPath>
+        </defs>
+        <ellipse cx="292" cy="262" rx="208" ry="196" transform="rotate(-10 292 262)" fill="#DCEEF9"/>
+        <ellipse cx="250" cy="290" rx="205" ry="198" transform="rotate(6 250 290)" fill="#E5EEFA"/>
+        <g clip-path="url(#blobClip)">
+          <!-- المعطف -->
+          <path d="M316 336 C348 354 360 396 364 440 L368 560 L330 560 L330 430 C330 392 324 356 316 336 Z" fill="#EDF3FB"/>
+          <path d="M132 560 L142 430 C148 352 192 322 250 322 C308 322 352 352 358 430 L368 560 Z" fill="#FFFFFF"/>
+          <!-- القميص الطبي (V) -->
+          <path d="M216 326 L284 326 L250 384 Z" fill="#2E6ED6"/>
+          <path d="M216 326 L250 384 M284 326 L250 384" stroke="#E2EBF8" stroke-width="2.5"/>
+          <!-- الرقبة والرأس -->
+          <rect x="230" y="258" width="40" height="52" rx="16" fill="#F3C8A6"/>
+          <ellipse cx="250" cy="264" rx="19" ry="7" fill="#E5AF89" opacity=".5"/>
+          <ellipse cx="250" cy="212" rx="48" ry="54" fill="#F3C8A6"/>
+          <!-- الشعر -->
+          <path d="M201 212 C199 154 220 130 250 130 C280 130 301 154 299 212 C296 186 288 172 278 168 C264 180 244 182 232 177 C218 186 206 196 201 212 Z" fill="#24344F"/>
+          <path d="M202 200 C200 226 197 246 201 262 L208 258 C206 238 207 220 209 206 Z" fill="#24344F"/>
+          <path d="M298 200 C300 226 303 246 299 262 L292 258 C294 238 293 220 291 206 Z" fill="#24344F"/>
+          <!-- ملامح الوجه -->
+          <path d="M225 200 q11 -7 21 -1" stroke="#24344F" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M254 199 q11 -6 21 1" stroke="#24344F" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="235" cy="215" r="4.5" fill="#24344F"/><circle cx="265" cy="215" r="4.5" fill="#24344F"/>
+          <path d="M249 222 q5 9 -3 13" stroke="#DFA77F" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M236 241 q14 12 28 0" stroke="#B9606F" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <ellipse cx="221" cy="231" rx="9" ry="6" fill="#F2A5B8" opacity=".5"/>
+          <ellipse cx="279" cy="231" rx="9" ry="6" fill="#F2A5B8" opacity=".5"/>
+          <!-- السماعة الطبية -->
+          <path d="M226 316 C214 344 216 372 240 392" stroke="#1F3A6E" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M274 316 C286 344 284 372 260 392" stroke="#1F3A6E" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <circle cx="250" cy="398" r="11" fill="#1F3A6E"/><circle cx="250" cy="398" r="5" fill="#E5EEFA"/>
+          <!-- بطاقة التعريف -->
+          <g transform="translate(288 352) rotate(6)">
+            <rect width="40" height="52" rx="7" fill="#F0F5FC" stroke="#DBE6F5" stroke-width="2"/>
+            <rect x="7" y="7" width="26" height="18" rx="4" fill="#2E6ED6"/>
+            <circle cx="20" cy="16" r="4.5" fill="#FFF"/>
+            <rect x="7" y="31" width="26" height="3" rx="1.5" fill="#A9C6EC"/>
+            <rect x="7" y="38" width="18" height="3" rx="1.5" fill="#CFDEF2"/>
+          </g>
+          <!-- جيب المعطف -->
+          <rect x="196" y="388" width="34" height="26" rx="5" fill="#F9FBFE" stroke="#DBE6F5" stroke-width="2"/>
+          <rect x="208" y="382" width="5" height="18" rx="2.5" fill="#0284C7" transform="rotate(14 210 391)"/>
+          <!-- الذراع اليسرى + لوحة دواء -->
+          <path d="M188 364 C166 386 154 404 148 422" stroke="#E2EBF8" stroke-width="38" fill="none" stroke-linecap="round"/>
+          <path d="M188 364 C166 386 154 404 148 422" stroke="#FFFFFF" stroke-width="32" fill="none" stroke-linecap="round"/>
+          <g transform="translate(126 384) rotate(-15)">
+            <rect width="70" height="44" rx="8" fill="#fff" stroke="#DBE6F5" stroke-width="2.5"/>
+            <circle cx="18" cy="14" r="7" fill="#9CD1F0"/><circle cx="48" cy="14" r="7" fill="#E5EEFA"/>
+            <circle cx="18" cy="31" r="7" fill="#E5EEFA"/><circle cx="48" cy="31" r="7" fill="#9CD1F0"/>
+          </g>
+          <circle cx="146" cy="428" r="14" fill="#8CC7EE"/>
+          <!-- الذراع اليمنى + زجاجة الدواء -->
+          <path d="M312 358 C346 348 370 328 390 302" stroke="#E2EBF8" stroke-width="38" fill="none" stroke-linecap="round"/>
+          <path d="M312 358 C346 348 370 328 390 302" stroke="#FFFFFF" stroke-width="32" fill="none" stroke-linecap="round"/>
+          <g transform="translate(376 228)">
+            <rect x="4" y="6" width="40" height="58" rx="9" fill="#FFFFFF" stroke="#DBE6F5" stroke-width="2.5"/>
+            <rect x="11" y="-2" width="26" height="11" rx="4" fill="#1D5BBF"/>
+            <rect x="9" y="24" width="30" height="30" rx="6" fill="#E1F2FC"/>
+            <path d="M20 31h8v4h4v8h-4v4h-8v-4h-4v-8h4z" fill="#0284C7"/>
+            <rect x="13" y="49" width="22" height="3" rx="1.5" fill="#A9CFEA"/>
+          </g>
+          <ellipse cx="382" cy="286" rx="6" ry="10" fill="#8CC7EE" transform="rotate(-35 382 286)"/>
+          <circle cx="394" cy="296" r="15" fill="#8CC7EE"/>
+        </g>
+        <!-- عناصر عائمة: كبسولات ودواء وعلامات -->
+        <g aria-hidden="true">
+          <g transform="translate(46 86) rotate(-30)">
+            <rect x="0" y="-16" width="74" height="32" rx="16" fill="#7FAEE8"/>
+            <path d="M37 -16 H16 A16 16 0 0 0 16 16 H37 Z" fill="#0284C7"/>
+            <rect x="8" y="-10" width="26" height="6" rx="3" fill="#fff" opacity=".45"/>
+          </g>
+          <g transform="translate(470 232)">
+            <rect width="26" height="52" rx="7" fill="#fff" stroke="#DBE6F5" stroke-width="2"/>
+            <rect x="4" y="-6" width="18" height="9" rx="3" fill="#0284C7"/>
+            <rect x="3" y="22" width="20" height="26" rx="5" fill="#E1F2FC"/>
+            <rect x="6" y="6" width="4" height="30" rx="2" fill="#EDF3FB"/>
+          </g>
+          <g transform="translate(34 332)">
+            <circle r="15" fill="#9CD1F0"/><path d="M-6 0H6" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <ellipse cx="-4" cy="-6" rx="4" ry="2.5" fill="#fff" opacity=".6"/>
+          </g>
+          <path d="M484 310 h16 M492 302 v16" stroke="#B4CBEA" stroke-width="5" stroke-linecap="round"/>
+          <path d="M114 36 h12 M120 30 v12" stroke="#C5D8F2" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="168" cy="516" r="4" fill="#BBD8F0"/>
+          <circle cx="398" cy="60" r="5" fill="#D8E6F5"/>
+          <circle cx="240" cy="26" r="3.5" fill="#BBD8F0"/>
+        </g>
+      </svg>
+
+      <!-- بطاقات عائمة -->
+      <div class="chip chip-a"><span class="cic"><svg class="i"><use href="#i-shield"/></svg></span><span><b>Quality first</b><small>Highest quality standards</small></span></div>
+      <div class="chip chip-b"><span class="cic"><svg class="i"><use href="#i-award"/></svg></span><span><b>Authorized agencies</b><small>Sole agent — Natural Pharms</small></span></div>
+      <div class="chip chip-c"><span class="cic"><svg class="i"><use href="#i-pin"/></svg></span><span><b>4 branches</b><small>Across 4 governorates</small></span></div>
+    </div>
+  </div>
+
+  <!-- خط نبض القلب المتحرك (سماوي) -->
+  <div class="ecg-wrap" aria-hidden="true">
+    <svg class="ecg" viewBox="0 0 1200 70" preserveAspectRatio="none">
+      <path pathLength="1600" d="M0 35 H320 L334 12 L350 58 L362 35 H540 L552 35 L564 18 L580 52 L592 35 H900 L912 35 L922 22 L934 48 L944 35 H1200"/>
+    </svg>
+  </div>
+</section>
+
+<!-- شريط الشركاء المتحرك -->
+<div class="marquee" aria-label="Our principal partners">
+  <div class="mq-track" id="mqTrack">
+    <span class="mq-item">NATURAL PHARMS — SOLE AGENT, YEMEN <svg class="i"><use href="#i-plus"/></svg></span>
+    <span class="mq-item">YEMENI CO. FOR TRADE &amp; INDUSTRY OF MEDICINES <svg class="i"><use href="#i-plus"/></svg></span>
+    <span class="mq-item">PROPEL SPELL COMPANY — SANA'A <svg class="i"><use href="#i-plus"/></svg></span>
+    <span class="mq-item">FOOD &amp; DRUG RESEARCH FOUNDATION (FDRF) <svg class="i"><use href="#i-plus"/></svg></span>
+    <span class="mq-item">NATURAL PHARMS — SOLE AGENT, YEMEN <svg class="i"><use href="#i-plus"/></svg></span>
+    <span class="mq-item">YEMENI CO. FOR TRADE &amp; INDUSTRY OF MEDICINES <svg class="i"><use href="#i-plus"/></svg></span>
+    <span class="mq-item">PROPEL SPELL COMPANY — SANA'A <svg class="i"><use href="#i-plus"/></svg></span>
+    <span class="mq-item">FOOD &amp; DRUG RESEARCH FOUNDATION (FDRF) <svg class="i"><use href="#i-plus"/></svg></span>
+  </div>
+</div>
+
+<!-- ===== من نحن ===== -->
+<section id="about" data-spy>
+  <div class="container">
+    <div class="about-grid">
+      <!-- رسم توضيحي لمستودع الأدوية -->
+      <div class="about-art reveal">
+        <svg viewBox="0 0 460 380" role="img" aria-label="Illustration of a pharmaceutical warehouse with shelves of medicines">
+          <rect width="460" height="380" rx="26" fill="#EDF3FB"/>
+          <rect x="36" y="208" width="388" height="8" rx="4" fill="#CFDEF2"/>
+          <rect x="52" y="306" width="356" height="8" rx="4" fill="#CFDEF2"/>
+          <!-- الرف العلوي -->
+          <rect x="52" y="156" width="34" height="52" rx="5" fill="#fff" stroke="#DBE6F5" stroke-width="2"/>
+          <rect x="58" y="168" width="22" height="4" rx="2" fill="#CFDEF2"/><rect x="58" y="176" width="14" height="4" rx="2" fill="#D4E3F6"/>
+          <rect x="92" y="146" width="44" height="62" rx="5" fill="#2E6ED6"/>
+          <rect x="100" y="158" width="28" height="5" rx="2.5" fill="#fff" opacity=".85"/><rect x="100" y="168" width="18" height="4" rx="2" fill="#B9CDEF"/>
+          <rect x="142" y="150" width="26" height="58" rx="7" fill="#E1F2FC" stroke="#CDE4F6" stroke-width="2"/>
+          <rect x="147" y="142" width="16" height="10" rx="4" fill="#0284C7"/>
+          <rect x="147" y="168" width="16" height="20" rx="4" fill="#fff"/>
+          <path d="M151 173h4v3h3v4h-3v3h-4v-3h-3v-4h3z" fill="#0284C7"/>
+          <rect x="174" y="162" width="30" height="46" rx="5" fill="#E5EEFA" stroke="#CFDEF2" stroke-width="2"/>
+          <rect x="210" y="140" width="50" height="68" rx="6" fill="#fff" stroke="#DBE6F5" stroke-width="2"/>
+          <path d="M228 156h14v9h9v14h-9v9h-14v-9h-9v-14h9z" fill="#0284C7"/>
+          <rect x="266" y="150" width="22" height="58" rx="6" fill="#fff" stroke="#DBE6F5" stroke-width="2"/>
+          <rect x="270" y="142" width="14" height="9" rx="3" fill="#1D5BBF"/>
+          <rect x="294" y="158" width="36" height="50" rx="5" fill="#E1F2FC" stroke="#CDE4F6" stroke-width="2"/>
+          <rect x="336" y="148" width="42" height="60" rx="5" fill="#1D5BBF"/>
+          <rect x="344" y="160" width="26" height="5" rx="2.5" fill="#fff" opacity=".85"/><rect x="344" y="170" width="16" height="4" rx="2" fill="#B9CDEF"/>
+          <rect x="384" y="160" width="30" height="48" rx="5" fill="#E5EEFA" stroke="#CFDEF2" stroke-width="2"/>
+          <!-- الرف السفلي -->
+          <rect x="64" y="238" width="62" height="68" rx="7" fill="#fff" stroke="#DBE6F5" stroke-width="2.5"/>
+          <rect x="91" y="238" width="8" height="68" fill="#EEF4FB"/>
+          <rect x="74" y="256" width="14" height="14" rx="4" fill="#E1F2FC"/><rect x="74" y="278" width="20" height="4" rx="2" fill="#CFDEF2"/>
+          <rect x="134" y="230" width="54" height="76" rx="7" fill="#2E6ED6"/>
+          <path d="M155 252h12v8h8v12h-8v8h-12v-8h-8v-12h8z" fill="#A9CDF2"/>
+          <rect x="196" y="224" width="36" height="82" rx="10" fill="#E1F2FC" stroke="#CDE4F6" stroke-width="2.5"/>
+          <rect x="203" y="214" width="22" height="12" rx="5" fill="#1D5BBF"/>
+          <rect x="203" y="244" width="22" height="26" rx="5" fill="#fff"/>
+          <path d="M207 250h4v3h3v4h-3v3h-4v-3h-3v-4h3z" fill="#0284C7"/>
+          <rect x="240" y="238" width="64" height="68" rx="7" fill="#fff" stroke="#DBE6F5" stroke-width="2.5"/>
+          <path d="M264 254h16v10h10v16h-10v10h-16v-10h-10v-16h10z" fill="#0284C7"/>
+          <rect x="312" y="246" width="42" height="60" rx="6" fill="#E5EEFA" stroke="#CFDEF2" stroke-width="2"/>
+          <rect x="320" y="258" width="26" height="5" rx="2.5" fill="#fff"/>
+          <rect x="362" y="258" width="18" height="48" rx="5" fill="#fff" stroke="#DBE6F5" stroke-width="2"/>
+          <rect x="365" y="252" width="12" height="8" rx="3" fill="#7FAEE8"/>
+          <rect x="384" y="266" width="18" height="40" rx="5" fill="#fff" stroke="#DBE6F5" stroke-width="2"/>
+          <rect x="387" y="260" width="12" height="8" rx="3" fill="#0284C7"/>
+        </svg>
+        <div class="about-chip ac-1"><svg class="i"><use href="#i-plus"/></svg><span>Since 2004<small>Sana'a, Yemen</small></span></div>
+        <div class="about-chip ac-2"><svg class="i"><use href="#i-shield"/></svg><span>Commercial Reg.<small>No. 2004-1-309</small></span></div>
+      </div>
+
+      <div class="about-txt reveal" style="transition-delay:.1s">
+        <span class="eyebrow">About Us</span>
+        <h2>Two decades of dependable pharmaceutical trading</h2>
+        <p><strong>Al-Marwani Trading Establishment</strong> was founded in the capital Sana'a in 2004 under Commercial Register No. 2004-1-309, issued by the Ministry of Industry and Trade — for the import of medicines, medical supplies, electronic devices and equipment, alongside other commercial activities.</p>
+        <p>After several years of steady growth, we expanded in 2018 into selling and distributing medicines across the governorates of the Republic, becoming an agent for a number of local companies and distributing their products to our customers nationwide.</p>
+        <ul class="about-checks">
+          <li><span class="ck"><svg class="i"><use href="#i-check"/></svg></span>Licensed importer — Ministry of Industry &amp; Trade</li>
+          <li><span class="ck"><svg class="i"><use href="#i-check"/></svg></span>Sole agent distributor of Natural Pharms products in Yemen</li>
+          <li><span class="ck"><svg class="i"><use href="#i-check"/></svg></span>Authorized distributor for leading national manufacturers</li>
+          <li><span class="ck"><svg class="i"><use href="#i-check"/></svg></span>Four branches across four governorates</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- الخط الزمني -->
+    <div class="timeline reveal">
+      <div class="tl">
+        <span class="tl-year">2004</span>
+        <b>Founded in Sana'a</b>
+        <p>Licensed under Commercial Register No. 2004-1-309 for the import of medicines, medical supplies, and electronic equipment.</p>
+      </div>
+      <div class="tl">
+        <span class="tl-year">2018</span>
+        <b>Nationwide distribution</b>
+        <p>We entered the market for selling and distributing medicines to all governorates, and became agents for local companies.</p>
+      </div>
+      <div class="tl">
+        <span class="tl-year">Today</span>
+        <b>Four governorates, one network</b>
+        <p>Head office in Sana'a with branches in Dhamar, Al Jawf, and Amran — and a 22-member team serving customers nationwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== الأقسام ===== -->
+<section id="divisions" data-spy>
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>Four divisions, one standard of care</h2>
+      <p class="lead">From import licenses to last-mile delivery — everything a pharmacy, clinic, or hospital needs, under one roof.</p>
+    </div>
+
+    <div class="bento">
+      <!-- 1: استيراد الأدوية -->
+      <article class="bcard b1 reveal">
+        <div class="txt">
+          <div class="b-head"><span class="b-ic"><svg class="i"><use href="#i-bottle"/></svg></span><span class="b-num">01</span></div>
+          <h3>Pharmaceutical Import</h3>
+          <p>Licensed import of prescription and OTC medicines from trusted manufacturers — every product committed to the highest quality standards before it reaches a shelf.</p>
+          <div class="tags"><span>Licensed importer</span><span>Quality-assured sourcing</span></div>
+        </div>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 190 150">
+            <circle cx="95" cy="78" r="62" fill="#EDF3FB"/>
+            <g transform="translate(70 34)">
+              <rect y="8" width="40" height="60" rx="9" fill="#fff" stroke="#DBE6F5" stroke-width="2.5"/>
+              <rect x="7" width="26" height="10" rx="4" fill="#1D5BBF"/>
+              <rect x="6" y="26" width="28" height="30" rx="6" fill="#E1F2FC"/>
+              <path d="M20 31h6v5h5v6h-5v5h-6v-5h-5v-6h5z" fill="#0284C7"/>
+            </g>
+            <g transform="translate(34 106) rotate(-18)">
+              <rect y="-9" width="44" height="18" rx="9" fill="#7FAEE8"/>
+              <path d="M9 -9 H22 V9 H9 A9 9 0 0 1 9 -9 Z" fill="#0284C7"/>
+              <rect x="6" y="-4" width="18" height="4" rx="2" fill="#fff" opacity=".45"/>
+            </g>
+            <g transform="translate(126 22) rotate(14)">
+              <rect y="-9" width="44" height="18" rx="9" fill="#9CD1F0"/>
+              <path d="M9 -9 H22 V9 H9 A9 9 0 0 1 9 -9 Z" fill="#4E8FE0"/>
+              <rect x="6" y="-4" width="18" height="4" rx="2" fill="#fff" opacity=".5"/>
+            </g>
+            <circle cx="150" cy="112" r="8" fill="#0284C7"/><rect x="146.5" y="111" width="7" height="2" rx="1" fill="#fff" opacity=".7"/>
+            <circle cx="36" cy="38" r="6" fill="#7FAEE8"/>
+          </svg>
+        </div>
+      </article>
+
+      <!-- 2: المستلزمات الطبية -->
+      <article class="bcard b2 reveal" style="transition-delay:.08s">
+        <div class="txt">
+          <div class="b-head"><span class="b-ic"><svg class="i"><use href="#i-syringe"/></svg></span><span class="b-num">02</span></div>
+          <h3>Medical Supplies &amp; Consumables</h3>
+          <p>Surgical consumables, disposables, and everyday supplies for pharmacies, clinics, and hospitals.</p>
+          <div class="tags"><span>Consumables</span><span>Disposables</span></div>
+        </div>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 190 150">
+            <circle cx="95" cy="78" r="62" fill="#EDF5FB"/>
+            <rect x="34" y="52" width="84" height="56" rx="12" fill="#fff" stroke="#DBE6F5" stroke-width="2.5"/>
+            <path d="M64 52v-7a7 7 0 0 1 7-7h10a7 7 0 0 1 7 7v7" fill="none" stroke="#DBE6F5" stroke-width="2.5"/>
+            <path d="M76 62h7v9h9v7h-9v9h-7v-9h-9v-7h9z" fill="#0284C7"/>
+            <g transform="translate(138 28) rotate(38)">
+              <rect x="-5" y="-16" width="10" height="22" rx="2" fill="#fff" stroke="#DBE6F5" stroke-width="2"/>
+              <path d="M-5 -10h10M-5 -4h10" stroke="#DBE6F5" stroke-width="1.5"/>
+              <path d="M-1.8 -16v-7h3.6v7" fill="none" stroke="#1D5BBF" stroke-width="2.5"/>
+              <path d="M0 6v12" stroke="#4E8FE0" stroke-width="3" stroke-linecap="round"/>
+            </g>
+            <circle cx="30" cy="122" r="7" fill="#7FAEE8"/>
+            <circle cx="46" cy="128" r="7" fill="#9CD1F0"/>
+          </svg>
+        </div>
+      </article>
+
+      <!-- 3: الأجهزة الإلكترونية -->
+      <article class="bcard b3 reveal">
+        <div class="txt">
+          <div class="b-head"><span class="b-ic"><svg class="i"><use href="#i-monitor"/></svg></span><span class="b-num">03</span></div>
+          <h3>Electronic Devices &amp; Equipment</h3>
+          <p>Diagnostic and electronic medical equipment that keeps pace with modern clinical practice.</p>
+          <div class="tags"><span>Diagnostics</span><span>Electronic devices</span></div>
+        </div>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 190 150">
+            <circle cx="95" cy="78" r="62" fill="#EEF3FB"/>
+            <rect x="40" y="34" width="86" height="62" rx="12" fill="#fff" stroke="#DBE6F5" stroke-width="2.5"/>
+            <path d="M50 62h10l4-12 7 24 5-12h16" fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle class="blink" cx="94" cy="62" r="3.5" fill="#0284C7"/>
+            <rect x="70" y="100" width="26" height="4" rx="2" fill="#CFDEF2"/>
+            <path d="M83 96v6" stroke="#CFDEF2" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="116" cy="44" r="3" fill="#1D5BBF"/><circle cx="116" cy="54" r="3" fill="#7FAEE8"/>
+            <circle cx="148" cy="106" r="7" fill="#7FAEE8"/>
+          </svg>
+        </div>
+      </article>
+
+      <!-- 4: التوزيع والوكالة -->
+      <article class="bcard b4 reveal" style="transition-delay:.08s">
+        <div class="txt">
+          <div class="b-head"><span class="b-ic"><svg class="i"><use href="#i-truck"/></svg></span><span class="b-num">04</span></div>
+          <h3>Distribution &amp; Agency</h3>
+          <p>A nationwide distribution network reaching every governorate of the Republic — and sole or authorized agency for select national manufacturers, including Natural Pharms.</p>
+          <div class="tags"><span>Nationwide coverage</span><span>Sole &amp; authorized agencies</span></div>
+        </div>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 190 150">
+            <circle cx="95" cy="78" r="62" fill="#EDF3FB"/>
+            <path d="M28 108 C60 64 110 120 158 52" fill="none" stroke="#C3D6F0" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round"/>
+            <g transform="translate(158 52)">
+              <path d="M0 8 C-6 0 -9 -4 -9 -8 A9 9 0 1 1 9 -8 C9 -4 6 0 0 8Z" fill="#0284C7"/>
+              <circle cy="-8" r="3.5" fill="#fff"/>
+            </g>
+            <g transform="translate(58 58)">
+              <rect width="52" height="34" rx="6" fill="#1D5BBF"/>
+              <path d="M52 10h14l10 12v12h-24z" fill="#fff" stroke="#DBE6F5" stroke-width="2"/>
+              <path d="M56 14h7l6 8v4h-13z" fill="#E5EEFA"/>
+              <path d="M22 10h6v5h5v6h-5v5h-6v-5h-5v-6h5z" fill="#A9CDF2"/>
+              <circle cx="14" cy="36" r="7" fill="#1B2A47"/><circle cx="14" cy="36" r="2.5" fill="#fff"/>
+              <circle cx="64" cy="36" r="7" fill="#1B2A47"/><circle cx="64" cy="36" r="2.5" fill="#fff"/>
+              <path d="M-6 46h84" stroke="#DBE6F5" stroke-width="3" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== القيم + الرؤية والرسالة ===== -->
+<section class="values" id="values" data-spy>
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Our Aspirations</span>
+      <h2>The values we work by</h2>
+      <p class="lead">Seven commitments that shape every decision we make — from the warehouse to the customer's door.</p>
+    </div>
+
+    <div class="values-grid reveal">
+      <div class="value"><span class="no">01</span><div><h3>Respect &amp; Integrity</h3><p>We do business honestly, and we honor every commitment we make.</p></div></div>
+      <div class="value"><span class="no">02</span><div><h3>Focus on Customer Satisfaction</h3><p>Our customers' needs sit at the center of every decision.</p></div></div>
+      <div class="value"><span class="no">03</span><div><h3>Effective Leadership &amp; Teamwork</h3><p>Effective leadership, backed by a team that works as one.</p></div></div>
+      <div class="value"><span class="no">04</span><div><h3>Decisions Based on Clear Facts</h3><p>Clear facts first — then confident decisions.</p></div></div>
+      <div class="value"><span class="no">05</span><div><h3>Continuous Improvement</h3><p>Every process is reviewed, refined, and raised.</p></div></div>
+      <div class="value"><span class="no">06</span><div><h3>Engaging People</h3><p>We involve the people who live the work, every single day.</p></div></div>
+      <div class="value"><span class="no">07</span><div><h3>Relationship Management</h3><p>Long-term partnerships — carefully built, and carefully maintained.</p></div></div>
+    </div>
+
+    <div class="vm-grid reveal">
+      <div class="vm vm-vision">
+        <span class="vlabel"><svg class="i"><use href="#i-eye"/></svg>Vision</span>
+        <h3>To lead, and to be trusted</h3>
+        <p>To achieve leadership in the marketing of high-quality pharmaceuticals, to provide our valued clients with the best products committed to the highest quality standards, and to be the most trusted local provider of pharmaceutical products — consistently delivering a superior experience for clients and caregivers, across all settings.</p>
+      </div>
+      <div class="vm vm-mission">
+        <span class="vlabel"><svg class="i"><use href="#i-target"/></svg>Mission</span>
+        <h3>Quality of life, made affordable</h3>
+        <p>To make tireless efforts to improve the quality of life of patients by providing effective products that meet their medical needs at affordable prices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== التسويق والطموح + الإحصاءات ===== -->
+<section class="stats" data-spy>
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Marketing &amp; Growth</span>
+      <h2>A proven record across Yemen — with ambitions beyond</h2>
+      <p class="lead">We bring a proven track record of success in marketing medical equipment and pharmaceuticals across the Republic's governorates — and we are striving to expand into the Arab and regional markets.</p>
+    </div>
+    <div class="stats-grid reveal">
+      <div class="stat"><span class="cnt" data-count="20" data-suffix="+">0</span><small>Years of experience</small></div>
+      <div class="stat"><span class="cnt" data-count="22">0</span><small>Team specialists</small></div>
+      <div class="stat"><span class="cnt" data-count="4">0</span><small>Governorate branches</small></div>
+      <div class="stat"><span class="cnt" data-count="4">0</span><small>Principal partners</small></div>
+    </div>
+    <div class="stats-next reveal">
+      <span class="badge"><svg class="i"><use href="#i-pin"/></svg>Now serving</span>
+      <span>Every governorate of the Republic of Yemen</span>
+      <svg class="i arrow"><use href="#i-arrow"/></svg>
+      <span class="badge"><svg class="i"><use href="#i-globe"/></svg>Next chapter</span>
+      <span>Arab &amp; regional markets</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== الشركاء ===== -->
+<section id="partners" data-spy>
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Partners &amp; Agencies</span>
+      <h2>Sole agent &amp; authorized distributors</h2>
+      <p class="lead">We maintain strong working relationships across the pharmaceutical field — distributing for principals we know, trust, and grow with.</p>
+    </div>
+
+    <div class="partners-list reveal">
+      <!-- الوكيل الحصري -->
+      <div class="partner sole">
+        <div class="p-mono">NP</div>
+        <div>
+          <div class="natural">Natural Pharms <span class="p-tag">Sole Agent — Yemen</span></div>
+          <div class="p-sub">Sole agent distributors of Natural Pharms products in Yemen · Sana'a</div>
+        </div>
+        <div class="p-contact"><a class="p-chip" href="tel:+967774441115"><svg class="i"><use href="#i-phone"/></svg>+967 774 441 115</a></div>
+      </div>
+      <div class="partner">
+        <div class="p-mono">YC</div>
+        <div>
+          <div class="p-name">The Yemeni Company for Trade and Industry of Medicines <span class="p-tag">Authorized</span></div>
+          <div class="p-sub">National pharmaceutical manufacturer · Yemen</div>
+        </div>
+        <div class="p-contact"><span class="p-chip"><svg class="i"><use href="#i-award"/></svg>Principal partner</span></div>
+      </div>
+      <div class="partner">
+        <div class="p-mono">PS</div>
+        <div>
+          <div class="p-name">Propel Spell Company <span class="p-tag">Authorized</span></div>
+          <div class="p-sub">Authorized distributorship · Yemen — Sana'a</div>
+        </div>
+        <div class="p-contact"><a class="p-chip" href="tel:+96783163052"><svg class="i"><use href="#i-phone"/></svg>+967 83 163 052</a></div>
+      </div>
+      <div class="partner">
+        <div class="p-mono">FD</div>
+        <div>
+          <div class="p-name">Food &amp; Drug Research Foundation (FDRF) <span class="p-tag">Authorized</span></div>
+          <div class="p-sub">FDRF Laboratories · Yemen — Sana'a</div>
+        </div>
+        <div class="p-contact">
+          <a class="p-chip" href="tel:+967735116666"><svg class="i"><use href="#i-phone"/></svg>+967 73 511 6666</a>
+          <a class="p-chip" href="https://www.fdrf.net" target="_blank" rel="noopener"><svg class="i"><use href="#i-globe"/></svg>www.FDRF.net</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== الفروع + خريطة اليمن ===== -->
+<section id="branches" data-spy>
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Our Reach</span>
+      <h2>Four branches, four governorates</h2>
+      <p class="lead">From our head office in Sana'a, branches in Dhamar, Al Jawf, and Amran carry our products to customers across the Republic. Select a branch to explore it.</p>
+    </div>
+
+    <div class="branch-grid">
+      <div class="yemen-map reveal">
+        <svg class="map-svg" viewBox="0 0 400 205" role="img" aria-label="Stylized map of Yemen showing four branch locations">
+          <path class="country" d="M36 44 L78 30 L96 40 L128 26 L160 36 L196 22 L232 32 L268 18 L306 30 L336 22 L352 46 L342 84 L334 118 L318 146 L286 162 L246 164 L198 156 L148 148 L104 150 L64 144 L36 138 L24 104 L22 70 L28 46 Z"/>
+          <text class="map-label" x="200" y="196" text-anchor="middle">REPUBLIC OF YEMEN</text>
+          <!-- مسارات التوزيع من صنعاء -->
+          <path class="route" d="M95 82 Q90 74 92 68"/>
+          <path class="route" d="M96 98 Q95 104 95 108"/>
+          <path class="route" d="M104 84 Q140 56 162 48"/>
+          <!-- المواقع -->
+          <g class="pin" data-branch="amran" transform="translate(92,62)" tabindex="0" role="button" aria-label="Amran branch">
+            <circle class="ring" r="10"/><circle class="dot" r="7"/><text y="-14" text-anchor="middle">AMRAN</text>
+          </g>
+          <g class="pin" data-branch="sanaa" transform="translate(97,90)" tabindex="0" role="button" aria-label="Sana'a head office">
+            <circle class="ring" r="10"/><circle class="dot" r="7"/><text y="-14" text-anchor="middle">SANA'A</text>
+          </g>
+          <g class="pin" data-branch="dhamar" transform="translate(95,114)" tabindex="0" role="button" aria-label="Dhamar branch">
+            <circle class="ring" r="10"/><circle class="dot" r="7"/><text y="22" text-anchor="middle">DHAMAR</text>
+          </g>
+          <g class="pin" data-branch="jawf" transform="translate(170,46)" tabindex="0" role="button" aria-label="Al Jawf branch">
+            <circle class="ring" r="10"/><circle class="dot" r="7"/><text y="-14" text-anchor="middle">AL JAWF</text>
+          </g>
+        </svg>
+        <div class="map-legend">
+          <span><i class="lg-dot"></i>Branch</span>
+          <span><i class="lg-line"></i>Distribution route</span>
+        </div>
+      </div>
+
+      <div class="reveal" style="transition-delay:.1s">
+        <div class="branch-tabs">
+          <button class="btab" data-branch="sanaa" type="button"><b>Sana'a</b><small>Head Office</small></button>
+          <button class="btab" data-branch="dhamar" type="button"><b>Dhamar</b><small>Branch</small></button>
+          <button class="btab" data-branch="amran" type="button"><b>Amran</b><small>Branch</small></button>
+          <button class="btab" data-branch="jawf" type="button"><b>Al Jawf</b><small>Branch</small></button>
+        </div>
+        <div class="branch-detail" id="branchDetail"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== الفريق ===== -->
+<section id="team" data-spy>
+  <div class="container">
+    <div class="team-head reveal">
+      <div>
+        <span class="eyebrow">Our Team</span>
+        <h2>The specialists behind every delivery</h2>
+        <p class="lead">We employ highly qualified staff with deep technical experience and knowledge — a distinguished team combining practical and scientific expertise with outstanding performance, led by managers specializing in medical administration, public relations, and marketing. Their shared goal: your satisfaction.</p>
+      </div>
+      <div class="team-badge" aria-label="22 team members">
+        <div><b>22</b><small>Team members</small></div>
+      </div>
+    </div>
+
+    <div class="leads reveal">
+      <div class="lead"><span class="lg-mono">AB</span><div><small>Directorate General</small><b>Mr. Abdulelah Almarwani</b><p>Director General</p></div></div>
+      <div class="lead"><span class="lg-mono">AH</span><div><small>Directorate General</small><b>Dr. Abdulmalik Hamiddain</b><p>Assistant of Director General</p></div></div>
+      <div class="lead"><span class="lg-mono">AA</span><div><small>Marketing</small><b>Dr. Ahlam Abdullah</b><p>Marketing Manager</p></div></div>
+      <div class="lead"><span class="lg-mono">HA</span><div><small>Public Relations</small><b>Dr. Helmi Assaid</b><p>Public Relations Manager</p></div></div>
+      <div class="lead"><span class="lg-mono">HU</span><div><small>Administration</small><b>Mr. Hussain Abdulelah</b><p>Administrative Manager</p></div></div>
+      <div class="lead"><span class="lg-mono">MA</span><div><small>Finance</small><b>Mr. Mohammed Ahmed</b><p>Financial Manager</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== التواصل (بطاقة معلومات بدون نموذج) ===== -->
+<section id="contact" data-spy>
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's talk</h2>
+      <p class="lead">Orders, agency proposals, or product questions — reach us directly through any of the channels below.</p>
+    </div>
+
+    <div class="c-info reveal" style="transition-delay:.1s">
+      <div class="c-head">
+        <div>
+          <h3>Al-Marwani Trading Establishment</h3>
+          <p>Algiada Str 112, Al-Bait Assaid Building — 3rd Floor, Flat No. 14, Sana'a, Yemen</p>
+        </div>
+        <div class="c-actions">
+          <a class="btn btn-accent" href="tel:+967771233313"><svg class="i"><use href="#i-phone"/></svg>Call Us</a>
+          <a class="btn" href="mailto:marpharmaa@gmail.com" style="background:rgba(255,255,255,.12);color:#fff"><svg class="i"><use href="#i-mail"/></svg>Email Us</a>
+        </div>
+      </div>
+      <div class="c-grid">
+        <div class="c-row"><span class="ic"><svg class="i"><use href="#i-pin"/></svg></span><div><b>Head Office</b><span>Algiada Str 112, Al-Bait Assaid Bldg, Flat 14 — Sana'a, Yemen</span></div></div>
+        <div class="c-row"><span class="ic"><svg class="i"><use href="#i-box"/></svg></span><div><b>P.O. Box</b><span>25126</span></div></div>
+        <div class="c-row"><span class="ic"><svg class="i"><use href="#i-globe"/></svg></span><div><b>Website</b><a href="https://www.mar-pharma.com" target="_blank" rel="noopener">www.mar-pharma.com</a></div></div>
+        <div class="c-row"><span class="ic"><svg class="i"><use href="#i-phone"/></svg></span><div><b>Telephone</b><a href="tel:+9671221880">+967 1 221 880</a></div></div>
+        <div class="c-row"><span class="ic"><svg class="i"><use href="#i-print"/></svg></span><div><b>Fax</b><span>+967 1 221 990</span></div></div>
+        <div class="c-row"><span class="ic"><svg class="i"><use href="#i-phone"/></svg></span><div><b>Mobile</b><a href="tel:+967771233313">+967 771 233 313</a></div></div>
+        <div class="c-row"><span class="ic"><svg class="i"><use href="#i-mail"/></svg></span><div><b>Email</b><a href="mailto:marpharmaa@gmail.com">marpharmaa@gmail.com</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== التذييل ===== -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#home" aria-label="MarPharma home">
+          <!-- الشعار بنسخة معكوسة الألوان: سماعة + كبسولة -->
+          <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true">
+            <rect x="2" y="2" width="36" height="36" rx="11" fill="#fff"/>
+            <path d="M14 8.5v7c0 4.6 12 4.6 12 0V8.5" fill="none" stroke="#16376B" stroke-width="3.4" stroke-linecap="round"/>
+            <path d="M20 19v5.5" fill="none" stroke="#16376B" stroke-width="3.4" stroke-linecap="round"/>
+            <rect x="12" y="26" width="16" height="7" rx="3.5" fill="#fff" stroke="#16376B" stroke-width="1.5"/>
+            <path d="M15.5 26H20v7h-4.5a3.5 3.5 0 0 1 0-7z" fill="#0284C7"/>
+            <path d="M20 26v7" stroke="#16376B" stroke-width="1.7"/>
+          </svg>
+          <span class="brand-name">Mar<em style="font-style:normal;color:#A9CDF2">Pharma</em></span>
+        </a>
+        <p class="f-about">Al-Marwani Trading Establishment — importing and distributing medicines, medical supplies, and electronic medical equipment across the Republic of Yemen since 2004.</p>
+        <p class="f-reg">Commercial Register No. 2004-1-309<br>Ministry of Industry &amp; Trade — Republic of Yemen</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="foot-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#divisions">Our Divisions</a></li>
+          <li><a href="#values">Values &amp; Vision</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#branches">Branches</a></li>
+          <li><a href="#team">Leadership Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="foot-c">
+          <span><svg class="i"><use href="#i-pin"/></svg>Algiada Str 112, Al-Bait Assaid Bldg, Flat 14 — Sana'a, Yemen</span>
+          <a href="tel:+9671221880"><svg class="i"><use href="#i-phone"/></svg>+967 1 221 880</a>
+          <a href="mailto:marpharmaa@gmail.com"><svg class="i"><use href="#i-mail"/></svg>marpharmaa@gmail.com</a>
+          <a href="https://www.mar-pharma.com" target="_blank" rel="noopener"><svg class="i"><use href="#i-globe"/></svg>www.mar-pharma.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 Al-Marwani Trading Establishment — Sana'a, Yemen. All rights reserved.</span>
+      <span>www.mar-pharma.com</span>
+    </div>
+  </div>
+</footer>
+
+<!-- حاوية التوست -->
+<div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+<script>
+/* ===== أدوات عامة ===== */
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* ===== نظام التوست ===== */
+const stack = $('#toastStack');
+function toast(title, msg, type = 'ok'){
+  const t = document.createElement('div');
+  t.className = 'toast ' + type;
+  t.innerHTML = `<span class="t-ic"><svg class="i"><use href="#i-${type === 'ok' ? 'check' : 'alert'}"/></svg></span><div><b>${esc(title)}</b><p>${esc(msg)}</p></div>`;
+  stack.appendChild(t);
+  setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 320); }, 4200);
+}
+
+/* ===== شريط التنقل ===== */
+const nav = $('#navbar');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 10), {passive: true});
+ $('#burger').addEventListener('click', () => {
+  const open = document.body.classList.toggle('menu-open');
+  $('#burger').setAttribute('aria-expanded', open);
+});
+ $$('.nav-links a').forEach(a => a.addEventListener('click', () => {
+  document.body.classList.remove('menu-open');
+  $('#burger').setAttribute('aria-expanded', 'false');
+}));
+
+/* ===== تحديد القسم النشط أثناء التمرير ===== */
+const spyLinks = $$('.nav-links a');
+const spy = new IntersectionObserver(es => es.forEach(en => {
+  if (en.isIntersecting)
+    spyLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+}), {rootMargin: '-45% 0px -50% 0px'});
+ $$('[data-spy]').forEach(s => spy.observe(s));
+
+/* ===== الظهور عند التمرير ===== */
+const rev = new IntersectionObserver(es => es.forEach(en => {
+  if (en.isIntersecting) { en.target.classList.add('visible'); rev.unobserve(en.target); }
+}), {threshold: .12});
+ $$('.reveal').forEach(el => rev.observe(el));
+
+/* ===== مضاعفة شريط الشركاء لحلقة سلسة ===== */
+const mq = $('#mqTrack');
+mq.innerHTML += mq.innerHTML;
+
+/* ===== العدادات المتحركة ===== */
+const cnt = new IntersectionObserver(es => es.forEach(en => {
+  if (!en.isIntersecting) return;
+  const el = en.target, target = +el.dataset.count, suf = el.dataset.suffix || '';
+  const t0 = performance.now(), dur = 1500;
+  (function step(t){
+    const p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(target * e) + suf;
+    if (p < 1) requestAnimationFrame(step);
+  })(t0);
+  cnt.unobserve(el);
+}), {threshold: .5});
+ $$('.cnt').forEach(c => cnt.observe(c));
+
+/* ===== بيانات الفروع ===== */
+const BRANCHES = {
+  sanaa: {
+    name: "Sana'a", tag: 'Head Office',
+    desc: 'Our head office and main hub in the capital — handling imports, agency operations, and nationwide coordination since 2004.',
+    rows: [
+      {i:'pin',   t:"Algiada Str 112, Al-Bait Assaid Building — 3rd Floor, Flat No. 14, Sana'a"},
+      {i:'phone', t:'+967 1 221 880 · +967 771 233 313'},
+      {i:'globe', t:'www.mar-pharma.com'}
+    ]
+  },
+  dhamar: {
+    name: 'Dhamar', tag: 'Branch',
+    desc: 'A distribution branch serving Dhamar governorate and the surrounding central highlands.',
+    rows: [
+      {i:'truck', t:'Regional warehousing & delivery'},
+      {i:'users', t:'Local sales & support team'},
+      {i:'phone', t:'+967 1 221 880 · +967 771 233 313'},
+      {i:'globe', t:'www.mar-pharma.com'}
+    ]
+  },
+  amran: {
+    name: 'Amran', tag: 'Branch',
+    desc: 'A distribution branch covering Amran governorate and the neighboring northern districts.',
+    rows: [
+      {i:'truck', t:'Regional warehousing & delivery'},
+      {i:'users', t:'Local sales & support team'},
+      {i:'phone', t:'+967 1 221 880 · +967 771 233 313'},
+      {i:'globe', t:'www.mar-pharma.com'}
+    ]
+  },
+  jawf: {
+    name: 'Al Jawf', tag: 'Branch',
+    desc: 'A distribution branch extending our reach across Al Jawf governorate in the northeast.',
+    rows: [
+      {i:'truck', t:'Regional warehousing & delivery'},
+      {i:'users', t:'Local sales & support team'},
+      {i:'phone', t:'+967 1 221 880 · +967 771 233 313'},
+      {i:'globe', t:'www.mar-pharma.com'}
+    ]
+  }
+};
+
+const detail = $('#branchDetail');
+const pins = $$('.pin'), tabs = $$('.btab');
+function renderBranch(k){
+  const b = BRANCHES[k];
+  detail.innerHTML = `
+    <div class="bd-top"><h3>${b.name}</h3><span class="bd-tag">${b.tag}</span></div>
+    <p>${b.desc}</p>
+    ${b.rows.map(r => `<div class="bd-row"><span class="bd-ic"><svg class="i"><use href="#i-${r.i}"/></svg></span>${r.t}</div>`).join('')}`;
+}
+function setBranch(k){
+  pins.forEach(p => p.classList.toggle('active', p.dataset.branch === k));
+  tabs.forEach(t => t.classList.toggle('active', t.dataset.branch === k));
+  detail.classList.add('fade');
+  setTimeout(() => { renderBranch(k); detail.classList.remove('fade'); }, 170);
+}
+pins.forEach(p => {
+  p.addEventListener('click', () => setBranch(p.dataset.branch));
+  p.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setBranch(p.dataset.branch); }
+  });
+});
+tabs.forEach(t => t.addEventListener('click', () => setBranch(t.dataset.branch)));
+renderBranch('sanaa');
+pins.forEach(p => p.classList.toggle('active', p.dataset.branch === 'sanaa'));
+tabs.forEach(t => t.classList.toggle('active', t.dataset.branch === 'sanaa'));
+
+</script>
+</body>
+</html>
